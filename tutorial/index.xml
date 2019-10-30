@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>チュートリアル（基礎） on WinAutomation Support</title>
+    <link>http://A181102:2015/tutorial/</link>
+    <description>Recent content in チュートリアル（基礎） on WinAutomation Support</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Wed, 30 Oct 2019 09:33:49 +0900</lastBuildDate>
+    
+	<atom:link href="http://A181102:2015/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RPA、RDAとは</title>
+      <link>http://A181102:2015/tutorial/rpa_rda/</link>
+      <pubDate>Wed, 30 Oct 2019 09:35:20 +0900</pubDate>
+      
+      <guid>http://A181102:2015/tutorial/rpa_rda/</guid>
+      <description> このページではRPAに関する基礎知識の学習を行います。
+ RPAとは  RPAとは「Robotic Process Automation」の略語で、ルールエンジンなどの認知技術を用いることで、ロボットがＰＣ操作の代行を行い、業務効率化や人材不足への対応を図る取り組みです。 RPAは、基本的に管理用のサーバーが存在し、そこからロボットの管理制御を行います。
+   RDAとは  RDAとは「Robotic Desktop Automation」の略語で、基本的な概念はRPAと同様ですが、基本的にはサーバーが存在せず、各クライアントPC上にインストールを行い、そこで開発、実行を行います。　   AIとの違い  RPAはAIと違い、学習機能がなく、あらかじめ設定したルールに基づき、すべてのプロセスを処理します。（工業用のロボットと同じイメージです。）
+そのため、対象とする業務には、作業の標準化や手順の明確化を行う必要があります。
+!!! Tip AIは判断が出来る技術として、語られることが多いですが、実際には確率論としての判断のため、AIを用いた場合でも、最終的には人の判断が必須となります。
+   マクロ(VBA)との違い  マクロは主にEXCELなどのMicrosoft Office製品を中心とした操作を得意としています。
+一方RPAは、EXCELなどのMicrosoft Office製品の操作に加え、他のデスクトップアプリケーションやWebアプリケーションの操作を行うことも可能です。
+そのため、従来の手法では集計をEXCELマクロで行い、結果を人が転記していたような業務も、全てRPAで完結することが可能となります。
+   RPAに適した業務  RPAはルールに基づいた業務を得意分野としているため、定型的な業務（EXCELからシステムへの転記作業、〆処理などの月次処理等）が適していると言えます。 AI技術と組み合わせることで、銀行や自治体での帳票OCRや顔認証（警備）などにも利用されています。
+!!! Note RPAとAIを組み合わせた「RPAI」というワードを2019年にソフトバンク社が提唱しました。
+これらの組み合わせが、これからのデファクトスタンダードとなるでしょう。
+   RPAに適さない業務  手順が統一できない業務、センスが求められる業務などはRPAには適しません。
+また、あまりにも判断条件が多いような場合は、開発工数・メンテナンス性などを考えると、あまり適した業務ではありません。
+そういった業務は、将来においてもAIに代替が難しい(専用AIが必要)と思われるため、業務の見直しや、これまでと同様に人が携わっていく必要があります。  </description>
+    </item>
+    
+    <item>
+      <title>WinAutomationとは</title>
+      <link>http://A181102:2015/tutorial/whats_winautomation/</link>
+      <pubDate>Wed, 30 Oct 2019 11:46:24 +0900</pubDate>
+      
+      <guid>http://A181102:2015/tutorial/whats_winautomation/</guid>
+      <description> WinAutomationとは WinAutomationは、日本ではまだメジャーではありませんが、世界中の多くの企業で利用されているRDAプラットフォームです。
+ 開発元について  
+ 2005年にギリシャにて設立 全世界8000社を超える顧客 マイクロソフト ゴールドパートナー 2017年ガートナー社マーケット・ガイド代表ベンダー（RPA分野）    主力製品 WinAutomation  サーバーレスタイプのデスクトップオートメーションソフトウェア  ProcessRobot  ロードバランサ―を搭載した大規模向けRPAプラットフォーム   主なパートナー企業  WinAutomationの主な機能  メールトリガー、ファイルトリガーなど様々なトリガーによるロボットの実行 スケジュールによるロボットの実行 マクロレコーダー、Webレコーダーによる処理の自動記録 画像認識＋UI Spyによる多彩で確実なアプリケーションの操作 カスタムCSSによる動的サイトの操作 実行ログの自動記録 エラー発生時のスクリーンショット保存機能   他のRDA(RPA)との比較  Process Robot(RPA)へのアップグレードが可能 複数プロセスの同時操作が可能 同一プロセスの同時実行制御（キュー）が可能 画像処理にはない高速処理を実現 WebAPIにノンプログラミングで直接アクセスすることが可能 VBScript、javascript、Powershell等との連携が可能  </description>
+    </item>
+    
+    <item>
+      <title>セットアップ手順</title>
+      <link>http://A181102:2015/tutorial/setup/</link>
+      <pubDate>Wed, 30 Oct 2019 11:55:16 +0900</pubDate>
+      
+      <guid>http://A181102:2015/tutorial/setup/</guid>
+      <description> セットアップ手順 WinAutomationの利用にあたり、まずはインストールおよびライセンス認証を行いましょう。
+ インストール  インストーラーを管理者ユーザーで実行してください。
+ [Microsoft Visual C++ Runtime 14.0]のインストールを行います。
+ [Next]ボタンをクリックします。  [Microsoft Visual C++ Runtime 14.0]が、既にインストールされている場合は、この画面は表示されません。  インストールが進行します。
+  [WinAutomation]のインストールを行います。
+ [Next]ボタンをクリックします。  [I accept the terms of the license agreement]にチェックし、[Next]ボタンをクリックします。  [Next]ボタンをクリックします。  [Add desktop shortcut]にチェックし、[Next]ボタンをクリックします。  [Next]ボタンをクリックします。  Mozilla FirefoxまたはGoogle Chromeをブラウザとして使用する場合は、チェックを入れてください。  [Next]ボタンをクリックします。  インストールが進行します。  [Finish]ボタンをクリックします。     ライセンス認証  WinAutomationを起動します。  [I HAVE A LICENCE KEY]を起動します。  トライアルの場合は、[OR, CONTINUE EVALUATION]を選択してください。  ライセンスキーを入力し、[OK]ボタンをクリックします。   </description>
+    </item>
+    
+    <item>
+      <title>コンソールの操作方法</title>
+      <link>http://A181102:2015/tutorial/console/</link>
+      <pubDate>Wed, 30 Oct 2019 13:32:13 +0900</pubDate>
+      
+      <guid>http://A181102:2015/tutorial/console/</guid>
+      <description>トリガーの設定、ログの参照、Process Designerの起動など、WinAutomationの操作は全てWinAutomation Consoleを用いて行います。
+ここではWinAutomation Consoleの基本操作を学びましょう。
+ 起動とプロセスの実行  デスクトップのショートカットからWinAutomation Consoleを起動してください。
+デスクトップにショートカットがない場合は、プログラム一覧から起動するか、次のパスを実行してください。
+C:\Program Files\WinAutomation\WinAutomation.Console.exe
+ Examples &amp;gt; 01 - Beginnerフォルダを選択してください。 01 - Run Calculatorプロセスを選択し、Startを行ってください。
+ プロセスが起動するのを確認します。
+ 表示されたメッセージを閉じ、電卓が起動するのを確認します。   プロセスの作成  どのフォルダに作成したいかを選択し、New Processボタンをクリックします。
+ プロセスの名称と、どのモードで作成を開始するかを選択します。
+   プロセスタブの概要 プロセスの作成、プロセスのプロパティ設定、プロセス手動実行などを行います。
+&amp;nbsp;&amp;nbsp;&amp;nbsp;※ 青太字はよく使う機能を表しています ※
+ Create Group
+新しいプロセスの作成、新しいフォルダーの作成、プロセスのインポート、エクスポートなどを行います。
+ New Process
+選択したフォルダ内に新たなプロセスの作成します。 New Folder
+選択したフォルダ内に新たなフォルダを作成します。 Import Process
+出力されたプロセス（wajファイル）の取り込みを行います。
+ドラッグアンドドロップでも同様の操作が可能です。 Export Process
+選択したプロセスをwajファイルとして出力します。（wajファイル）  Edit Group
+Process Designerでのプロセス編集や、そのプロパティ設定、プロセスの削除、名前の変更、切り取り、コピー、貼り付けなどを行うことができます。
+ Process Designer</description>
+    </item>
+    
+    <item>
+      <title>Task1 コンソールを操作してみましょう</title>
+      <link>http://A181102:2015/tutorial/task1_console/</link>
+      <pubDate>Wed, 30 Oct 2019 13:38:25 +0900</pubDate>
+      
+      <guid>http://A181102:2015/tutorial/task1_console/</guid>
+      <description>下記手順に従い、プロセスを作成してみましょう。（所要時間　05:00）
+ My Processesフォルダを選択、NewFolderボタンを押下し、「Task_氏名」フォルダを作成してください。（例 Task_あさひ太郎）
+ 作成したフォルダを選択し、NewProcessを押下してください。
+ プロセス名称「Task1」を作成、Process Designerを起動してください。
+ Process Designerを終了し、「Task1」が正常に作成されていることを確認してください。
+ 「Task1」の名称を「Task1コンソール操作」に変更してください。
+  </description>
+    </item>
+    
+    <item>
+      <title>ProcessDesignerの操作方法</title>
+      <link>http://A181102:2015/tutorial/processdesigner/</link>
+      <pubDate>Wed, 30 Oct 2019 13:55:15 +0900</pubDate>
+      
+      <guid>http://A181102:2015/tutorial/processdesigner/</guid>
+      <description>ロボットの開発に必須となるツールがProcessDesignerです。
+アクションの設定方法、デバッグ方法などProcessDesignerの基本操作を学びましょう。
+ 初期設定ではデバッグ実行時にプロセスが自動保存されません。
+また、1行進むのに100msの待機時間が発生するため、デバッグに時間がかかってしまいます。
+メニュー  Tools  Process Designer Options  Debugger を開き、下記設定を行いましょう。
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[While running process in debugger wait for]・・・「0」
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[Save Process modifications automatically everytime it is run through the debugger]・・・チェック   アクションの配置  画面の左側にあるアクション一覧から、Display Messageアクションを探してみましょう。
+検索条件に「Display」や「Message」と入力することで、絞り込むことも可能です。  Display Messageアクションをダブルクリックするか、ワークスペースにドラッグアンドドロップしてください。 アクションの設定画面が起動されるため、以下のように設定してみます。
+ OKボタンを押し、実行を行ってください。
+   ウィンドウ概要  アクション一覧
+ロボットの命令文を「アクション」と呼びます。 ロボットの動きはアクションの組み合わせで制御されます。
+各アクションをダブルクリックするか、ワークスペースにドラッグアンドドロップすることで、配置が出来ます。 ワークスペース
+ロボットの動きをつかさどる心臓部です。
+基本的には上から順番に実行されます。 ファンクション
+同じプロセス内で共通した処理であったり、エラーが発生した際の処理をまとめるものを「ファンクション」と呼びます。（EXCELのシートのような機能）
+ファンクションを上手に使うことで、見やすさ、保守性が向上します。 変数一覧
+ロボットがデータを記憶する器を「変数」と呼びます。
+WinAutomationでは「％」で囲まれた文字列を「式」として認識し、変数を使用する場合は、%ABC%などのように使用します。
+変数を定義すると、WinAutomationが文字や数字など様々な型を自動で認識します。
+なお変数名に日本語は使用できません。 コントロールリポジトリ
+操作対象となるアプリケーションの細かな情報が記憶されます。
+アプリケーション操作において、かなり上級の設定を行う場合に使用するため、ここでは割愛します。 イメージリポジトリ</description>
+    </item>
+    
+    <item>
+      <title>基本アクションについて</title>
+      <link>http://A181102:2015/tutorial/action/</link>
+      <pubDate>Wed, 30 Oct 2019 14:03:08 +0900</pubDate>
+      
+      <guid>http://A181102:2015/tutorial/action/</guid>
+      <description>Process Designerの操作で学んだように、WinAutomationは様々なアクションを組み合わせることで、開発を行っていきます。
+WinAutomationは200を超えるアクションが組み込まれています。
+ここではもっとも基本的なアクションを学びましょう。
+ 変数操作  WinAutomationは内部データを変数と呼ばれる箱で管理しています。 変数は式の一部として記述を行い、「%Variable%」のように使用します。 変数には数値、文字、日付など様々なタイプ（型）があります。 文字であれば.Length（文字長）、Listであれば.Count（データの個数）など、変数の型によって必要な補足情報（プロパティ）にアクセスすることが可能です。　   変数名を初期値のまま使用することも可能ですが、これでは何の値が設定されているのか分かりません。
+「%FileName%」であれば、ファイル名が格納されていることが分かります。
+「%InputExcelFileName%」であれば、入力に必要なEXCELファイル名が設定されていることが分かります。
+あまり長すぎるのも好ましくありませんが、簡潔で分かりやすい変数名を設定するように心がけましょう。  Set Variable  新たな変数を定義します。
+ Set Value: 値
+into Variable: 変数名（日本語不可）
+ 他の変数同士の値を連結や計算したい場合は以下のような設定が可能です。
+%a%%b% %a b% %a+b% %a/b%    「100%ジュース」のように、設定したい文字に「%:パーセント(半角)」が含まれる場合、式として解釈されてしまい、エラーとなってしまいます。 この場合「100￥%ジュース」のように、「%」の前に「￥」を記載することで、エラーを回避することができます。（￥は半角） また「￥」を表現したい場合は「￥￥」のように記述します。 フォルダ名とファイル名を結合したいときは「%Folder%￥%FileName%」ではなく「%Folder%￥￥%FileName%」と設定することを覚えておきましょう。  Increase Variable  指定した変数に指定した値を加算します。
+ Variable Name : 変数名
+Increase by: 加算値
+ 減算を行う場合は、Decrease Variableアクションを使用します。
+   Set Variableアクションで%num + 1%とした場合も加算が行われます。 Increase Variableアクションのほうが具体的な動作がわかるため、初期値設定や計算を行う場合はSet Variableアクションを、ループ処理に組み込むような場合は、こちらを使用したほうが好ましいでしょう。  List  Listは複数の値を1つの変数で管理することができます。（EXCELの1行のようなイメージ）</description>
+    </item>
+    
+    <item>
+      <title>Task2 アクションを設定してみましょう</title>
+      <link>http://A181102:2015/tutorial/task2_std_action/</link>
+      <pubDate>Wed, 30 Oct 2019 14:23:46 +0900</pubDate>
+      
+      <guid>http://A181102:2015/tutorial/task2_std_action/</guid>
+      <description>問題 下記手順に従い、プロセスを作成してみましょう。（所要時間　10:00）
+ Task1で作成したフォルダを選択し、プロセス名称「Task2」を作成、Process Designerを起動してください。
+ 次の要件を満たすプロセスを作成してください。　 Set Variableアクションを配置し、変数名「%From%」値「1」としてください。 Set Variableアクションを配置し、変数名「%To%」値「10」としてください。 Loopアクションを配置し、%From%～%To%まで繰り返すように設定してください。 LoopアクションのIndexが「5」の場合、Display Messageアクションを使用して「5です。」と表示されるように設定してください。 LoopアクションのIndexが「8」以上の場合、Display Messageアクションを使用して「nです。」と表示されるように設定してください。
+ただし、nはLoopにおける現在のIndexであり、LoopIndexが8のとき、「8です。」と表示されるものとします。   作成したプロセスを実行し、正常に動作することを確認してください。
+ 条件を変更し、動作の違いを確認してください。
+   解答例 Task2_解答例&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Download</description>
+    </item>
+    
+    <item>
+      <title>トリガー設定</title>
+      <link>http://A181102:2015/tutorial/trigger/</link>
+      <pubDate>Wed, 30 Oct 2019 14:30:19 +0900</pubDate>
+      
+      <guid>http://A181102:2015/tutorial/trigger/</guid>
+      <description>トリガー機能はWinAutomationを強力に使用するために最も重要な機能の1つです。
+ここではトリガーに関する基礎知識を学びましょう。
+ トリガーの設定 もっとも使用するファイルトリガーを使用して、トリガーを作成してみましょう。
+トリガーの作成  コンソールからTriggersタブを選択します。 Newボタンを押し、File Monitor Triggerを選択します。  以下のようにトリガーの内容を設定します。
+ Folder to Monitor : デスクトップ
+Files to Monitor : ＊テスト＊.xlsx ＊は半角で入力してください。
+  OKボタンを押下します。
+ 起動するプロセスを選択する画面が表示されるため、Examples &amp;gt; 01 - Beginner &amp;gt; 01 - Run Calculator を選択します。
+ 以下の2ファイルを順番にデスクトップにダウンロードします。
+RPAテスト_2019年.xlsx&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Download
+RPATest_2019年.xlsx&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Download
+ 今回は対象を「＊テスト＊.xlsx」と設定したため、ファイル名に「テスト」が含まれるファイル名のみ、トリガーが実行されます。
+  トリガー変数 今回使用したファイルトリガーでは、「RPAテスト_2019年.xlsx」「テスト2020年.xlsx」「RPAテスト.xlsx」のいずれでも実行が行われますが、どのファイルがきっかけとなり、プロセスが起動したかがわからないと、処理ができない場合があります。
+WinAutomationではトリガーで実行されるプロセス用に、あらかじめ決められた変数が準備されています。
+ 新規にProcess Designerを起動します。
+ Variables Managerを終了し、Display Messageアクションを配置し、Message To Displayに「%FileTriggerFilePath%」と設定します。
+ プロセスを保存し、先ほど作成したトリガーの起動プロセスを今作成したプロセスに変更します。
+ 下記ファイルをダウンロードし、デスクトップに配置します。
+RPAテスト.xlsx&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Download
+ メッセージにきっかけとなったファイルパスが表示されることを確認します。
+ メニュー  Tools  Variables Manager  Trigger Variables から、トリガー変数一覧が確認できます。    トリガーの種類 トリガーは様々な状況に対応できるよう、以下のものが準備されています。</description>
+    </item>
+    
+    <item>
+      <title>Task3 トリガーを作成してみましょう</title>
+      <link>http://A181102:2015/tutorial/task3_trigger/</link>
+      <pubDate>Wed, 30 Oct 2019 14:45:38 +0900</pubDate>
+      
+      <guid>http://A181102:2015/tutorial/task3_trigger/</guid>
+      <description>  問題 下記手順に従い、プロセスとトリガーを作成してみましょう。（所要時間　10:00）
+ 下記ZIPファイルをダウンロードし、デスクトップに展開してください。
+Task3.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Download
+ 新たに「Task3」のプロセスを作成します。
+ 展開したフォルダの「実行」フォルダにPDFファイルが配置されたら、「処理済み」フォルダに移動するようにアクションを設定します。
+ 「Task3」プロセスが起動されるように、トリガーを設定します。
+ ファイルの移動には「Move File(s)」アクションを使用します。    解答例 Task3_解答例.waj&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Download
+ トリガーの動作確認は、Folder to Monitorパスの「任意のuser名」部分をご自身のユーザー名に変更してから行ってください。  </description>
+    </item>
+    
+    <item>
+      <title>スケジューラー設定</title>
+      <link>http://A181102:2015/tutorial/scheduler/</link>
+      <pubDate>Wed, 30 Oct 2019 14:56:20 +0900</pubDate>
+      
+      <guid>http://A181102:2015/tutorial/scheduler/</guid>
+      <description>スケジューラー機能は、いわば時間に関するトリガーともいえます。
+Windowsにもタスクスケジューラーが存在しますが、月末を指定出来るなどより高度な設定が可能です。
+スケジューラーに関する基礎知識を学びましょう。
+ スケジュール設定 スケジュールは2つの設定が可能です。
+ Schedule
+ Recurring Schedule
+  今回はScheduleを設定してみましょう。
+ コンソールからSchedulerタブを選択します。 Newボタンを押し、Scheduleを選択します。  Schedule TypeでWeeklyを選択し、Mondayにチェックを入れます。  Add Timeを選択し、12:00:00と18:00:00を設定します。  OKを押し、対象のプロセスを選択します。
+ 毎週月曜日の12:00と18:00に実行される設定が完了です。   スケジューラーの種類 スケジュールには以下のものが準備されています。
+Schedule Scheduleは任意のタイミングで実行したい場合に使用します。
+以下のような内容を設定することができます。
+ Daily（毎日）  時刻指定  On Specific Dates（任意の日付）  日付指定 時刻指定  Weekly（週次）  曜日指定  Monthly（月次）  月指定 日指定（1日、5日など） 月末日指定 平日の末日指定 時刻指定   Recurring Schedule 指定した時間間隔で実行されます。
+単位はSeconds（秒）、Minutes（分）、Hours（時）から選択可能です。</description>
+    </item>
+    
+    <item>
+      <title>Task4 スケジューラーを作成してみましょう</title>
+      <link>http://A181102:2015/tutorial/task4_scheduler/</link>
+      <pubDate>Wed, 30 Oct 2019 15:00:21 +0900</pubDate>
+      
+      <guid>http://A181102:2015/tutorial/task4_scheduler/</guid>
+      <description>問題 下記手順に従い、プロセスとスケジュールを作成してみましょう。（所要時間　10:00）
+ 新たに「Task4」のプロセスを作成します。
+ 現在時刻をDisplay Messageアクションで表示されるようにします。
+ 作成したプロセスに対し、30秒間隔で実行されるようにRecurring Scheduleを作成します。
+ 何度か確認ができたら、作成したスケジュールをDisable（無効化）に設定します。
+ 現在時刻は、Get Current Date and Timeアクションで取得できます。    解答例 Task4_解答例.waj&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Download</description>
+    </item>
+    
+    <item>
+      <title>EXCEL操作</title>
+      <link>http://A181102:2015/tutorial/excel/</link>
+      <pubDate>Wed, 30 Oct 2019 15:12:28 +0900</pubDate>
+      
+      <guid>http://A181102:2015/tutorial/excel/</guid>
+      <description>これまでは基礎的な部分が大きかったですが、RPAらしく他のアプリケーションを操作していきましょう。 まずは、業務には欠かせないEXCELの操作を行いたいと思います。
+ EXCELのデータ構造 普段意識することはありませんが、EXCELは縦と横の2次元データから構成されています。
+2次元データというと少し複雑に感じますが、「A1」であれば「A列の1行目」というように、理解することができると思います。
+WinAutomationでは、EXCELデータを取り込むと、DataTableという形式に変換され、「%ExcelData[0][0]%」というような式でアクセスします。
+1番目のインデックスが「行」、2番目のインデックスが「列」を表しており、読み込む前のEXCELは1から、WinAutomationに読み込んだ後は0からスタートするため、注意しましょう。
+ EXCELの起動 Launch Excelアクションを使用することで、EXCELを起動することができます。
+ プロセスデザイナーを起動し、Launch Excelアクションを配置します。  そのままOKボタンを押し、実行を行います。
+ 空のEXCELが起動することを確認します。
+ 次に先ほど設定したLaunch Excelアクションを編集し、すでに作成されているファイルを開いてみましょう。
+ 既存ファイルを開く場合はLauch Excel項目で「and open the dollowing document」を選択し、Document Path項目に開きたいEXCELファイルのパスを指定します。
+ 再度実行を行い、EXCELファイルが起動することを確認してください。
+ Make Instance Visibleのチェックを外すと、EXCELの画面が表示されなくなる代わりに、処理が若干早くなります。 ただし、エラーが発生した場合に、通常の操作ではEXCELを閉じれなくなるため、基本的には表示させておくのが無難です。    EXCELへの書き込み EXCELへの書き込みには、Write to Excel Worksheetアクションを使用します。
+ プロセスデザイナーを起動し、Launch Excelアクションを配置、空のEXCELを起動するように設定します。
+ Write to Excel Worksheetアクションを配置し、Excel Instanceに上記で設定したEXCELのインスタンスを設定します。
+インスタンスとは、複数のEXCELを起動している場合に、どのEXCELを操作するのかを判断するために、WinAutomationが生成する名札のようなものです。
+ 以下のように各項目を設定します。
+ 実行を行い、EXCELのA1セルに「Hello Excel」が表示されることを確認します。
+ Column項目にはA、ABのようにEXCELの列名を設定することも可能です。    EXCELの読み込み EXCELへの読み込みには、Read from Excel Worksheetアクションを使用します。</description>
+    </item>
+    
+    <item>
+      <title>Task5 EXCELを操作してみましょう</title>
+      <link>http://A181102:2015/tutorial/task5_excel/</link>
+      <pubDate>Wed, 30 Oct 2019 15:19:13 +0900</pubDate>
+      
+      <guid>http://A181102:2015/tutorial/task5_excel/</guid>
+      <description>問題 下記手順に従い、プロセスを作成してみましょう。（所要時間　20:00）
+ 新たに「Task5」のプロセスを作成します。
+ EXCELを新規に起動し、下記データを書き込むようにアクションを設定します。
+   店舗 売上 粗利     上野店 128 41   大宮店 53 29   郡山店 41 25    書き込みしたファイルを「Task5.xlsx」という名前でデスクトップに保存します。
+ 次に下記ファイルをデスクトップにダウンロードし、そのファイルを読み込むアクションを設定します。
+Task5_追加.xlsx&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Download
+ ダウンロードしたファイルから「山形店」を抽出し、「Task5.xlsx」ファイルに追記、保存してください。
+  解答例 Task5_解答例.waj&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Download</description>
+    </item>
+    
+    <item>
+      <title>マクロレコーダー</title>
+      <link>http://A181102:2015/tutorial/macro_recorder/</link>
+      <pubDate>Wed, 30 Oct 2019 15:22:10 +0900</pubDate>
+      
+      <guid>http://A181102:2015/tutorial/macro_recorder/</guid>
+      <description> これまで、様々なアクションを手動で設定してきましたが、マクロレコーダー機能を用いると、アプリケーション操作を自動で記録することが可能になります。
+ここでは、マクロレコーダー機能の基本操作を学びます。
+ マクロレコーダーの操作  コンソールから新たにプロセスを作成します。
+ Macro Recorderを選択します。
+ Macro Recorderウィンドウが起動します  操作したいアプリケーションを起動し、操作していきます。
+ Macro RecorderウィンドウでFinishボタンを押下します。
+ 記録した内容がワークスペースに展開されます。
+ 実行を行い、動作を確認します。
+ パスワードは自動保存されない仕組みになっています。 手動での設定を行ってください。   全ての処理を忠実に再現できるわけではありません。 処理が速すぎて操作するアプリケーションがついてこない場合もあります。 処理の概要を記録し、少しずつ手で修正を行うのがよいでしょう。    操作動画  アプリケーション操作   </description>
+    </item>
+    
+    <item>
+      <title>Task6 アプリケーションを操作してみましょう</title>
+      <link>http://A181102:2015/tutorial/task6_macro_recorder/</link>
+      <pubDate>Wed, 30 Oct 2019 15:26:32 +0900</pubDate>
+      
+      <guid>http://A181102:2015/tutorial/task6_macro_recorder/</guid>
+      <description>問題 下記手順に従い、プロセスを作成してみましょう。（所要時間　20:00）
+ 下記ファイルをダウンロードし、デスクトップに展開します。
+Task6.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Download
+ 展開されたフォルダから「Task6.exe」を実行し、下記ユーザー情報を設定します。
+   ユーザーID : user1
+パスワード : password
+  [ログイン]ボタンを押下します。
+ システムメニュー画面の[バックアップ]ボタンを押下します。
+ バックアップが完了したメッセージを確認し、アプリケーションを終了します。
+ 新たに「Task6」のプロセスを作成します。
+ 上記操作内容をマクロレコーダーで記録します。
+ 動作確認を行います。
+ プログラムがうまく起動できない場合は、Run Applicationアクションを使用してプログラムを起動してください。   解答例 Task6_解答例.waj&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Download</description>
+    </item>
+    
+    <item>
+      <title>Webレコーダー</title>
+      <link>http://A181102:2015/tutorial/web_recorder/</link>
+      <pubDate>Wed, 30 Oct 2019 15:28:58 +0900</pubDate>
+      
+      <guid>http://A181102:2015/tutorial/web_recorder/</guid>
+      <description>これまで、Webレコーダー機能を用いると、Webページ操作を自動で記録することが可能になります。
+ここでは、Webレコーダー機能の基本操作を学びます。
+ Webレコーダーの操作  コンソールから新たにプロセスを作成します。
+ Web Recorderを選択します。
+ どのブラウザを使用するか選択します。
+ここではAutomation Browserを選択してください。
+ Macro Recorderウィンドウが起動します
+ URL欄にGoogleのURLを入力し、Goボタンを押下します。
+URL : http://google.co.jp/  検索キーワードに「RPA wikipedia」を設定し、エンターキーを押します。
+ 検索結果ページが表示されます。
+ もっとも上位に表示されたリンク上で右クリックし、「Extract Element Value &amp;gt; Text(&amp;ldquo;～～&amp;hellip;&amp;ldquo;」を選択してください。
+ 同様に2番目のページのリンク上で右クリックし、「Extract Element Value &amp;gt; Text(&amp;ldquo;～～&amp;hellip;&amp;ldquo;」を選択してください。
+ RECORDED ACTIONSから Show Preview を選択します。
+ 2つの動作で対象ページの全タイトルが取得できたことを確認します。
+ プレビュー画面を終了し、Finishボタンを押下します。
+ 記録した内容がワークスペースに展開されます。
+ 実行を行い、動作を確認します。
+ Google Chrome、Mozilla Firefoxを利用する場合は、拡張機能のインストールが必要です。
+Softomotive Automation
+Google Chrome / Mozilla Firefox     操作動画  Web操作</description>
+    </item>
+    
+    <item>
+      <title>Task7 Webサイトを操作してみましょう</title>
+      <link>http://A181102:2015/tutorial/task7_web_recorder/</link>
+      <pubDate>Wed, 30 Oct 2019 15:41:27 +0900</pubDate>
+      
+      <guid>http://A181102:2015/tutorial/task7_web_recorder/</guid>
+      <description>問題 下記手順に従い、プロセスを作成してみましょう。（所要時間　20:00）
+ 新たに「Task7」のプロセスを作成します。
+ Webレコーダー機能を用いて、Yahoo!Japan 路線情報にアクセスし、東京-大阪間を検索。
+ルート1～ルート3に表示される運賃と乗り換え回数を調べてください。
+ URL : https://transit.yahoo.co.jp/
+出発 : 東京駅
+到着 : 大阪駅
+日時 : 2019年09月01日 12:00 到着
+  取得した結果をEXCELに転記し、「Task7.xlsx」として保存してください。
+  解答例 Task7_解答例.waj&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Download</description>
+    </item>
+    
+    <item>
+      <title>画像認識</title>
+      <link>http://A181102:2015/tutorial/image_recognition/</link>
+      <pubDate>Wed, 30 Oct 2019 15:43:38 +0900</pubDate>
+      
+      <guid>http://A181102:2015/tutorial/image_recognition/</guid>
+      <description>一般的にRDAと呼ばれるツールは画像認識のみの機能を有していることが多いです。
+画像認識技術は、以前は処理が遅く、一般企業での利用は難しい分野でしたが、近年はコンピュータの性能が飛躍的に向上し、これをきっかけにAIやRPAが流行ったと言われています。
+ここではWinAutomationの画像認識を利用してみましょう。
+ WinAutomationにおける画像認識 WinAutomationでは、マクロレコーダー、Webレコーダーを利用した場合、画像認識を使用せずに、アクションが設定されます。
+これは画像認識と比べて、圧倒的に速度が速いためです。
+しかし、アプリケーションによっては、画像認識を利用しないと正しく動かないものもあります。
+例えば、下記のように処理結果が画像によって設定されているような場合です。
+こういったケースの場合の解決策として、画像認識を利用します。
+ 画像認識の設定 画像認識では主に3つのアクションを使用します。
+ If Image
+ 画像が存在しているか、または存在していないかを判断します。  Wait for Image
+ 画像が表示される、または表示が消えるまで処理を待機します。  Move Mouse to Image
+ 指定した画像にマウスを移動します。   EXCELを画像認識で操作してみましょう。
+ Launch Excelアクションで新規のエクセルを起動します。
+ Focus Windowアクションで起動したエクセルにフォーカスを設定します。
+   Move Mouse to Imageアクションで[挿入]タブの画像を設定し、[Add Image From Images Repository]ボタンを押下します。
+   Capture Imageボタンを押下します。
+   EXCELの挿入タブの左上をクリックし、右下までドラッグアンドドロップします。
+   設定した画像に名前を付けます。
+   画像が正しく設定されたことを確認し、OKボタンを押します。
+   Send Mouse Clickアクションで左クリックを行います。</description>
+    </item>
+    
+    <item>
+      <title>Task8 画像認識で処理を作成してみましょう</title>
+      <link>http://A181102:2015/tutorial/task8_image_recognition/</link>
+      <pubDate>Wed, 30 Oct 2019 15:46:04 +0900</pubDate>
+      
+      <guid>http://A181102:2015/tutorial/task8_image_recognition/</guid>
+      <description>問題 下記手順に従い、プロセスを作成してみましょう。（所要時間　20:00）
+ 下記ファイルをダウンロードし、デスクトップに展開します。
+Task8.zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Download
+ 展開されたフォルダから「Task8.exe」を実行します。
+ このプログラムは1～5までの番号ついたボタンが配置されています。
+このボタンにはランダムにあたりとはずれが設定されています。
+ あたりの画像、はずれの画像は、それぞれの表示ボタンで表示させることが可能です。
+ 各ボタンを押下し、
+あたりの場合はDisplay Messageアクションで「〇番が当たり！」
+はずれの場合はDisplay Messageアクションで「〇番は危険・・・」
+と表示するプロセスを、画像認識を使って作成してください。
+  解答例 Task8_解答例.waj&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Download</description>
+    </item>
+    
+    <item>
+      <title>例外処理</title>
+      <link>http://A181102:2015/tutorial/exeption/</link>
+      <pubDate>Wed, 30 Oct 2019 16:05:31 +0900</pubDate>
+      
+      <guid>http://A181102:2015/tutorial/exeption/</guid>
+      <description>ロボットを動かす際、想定したデータ形式と異なる、サイトのURLが変わったなど、様々な要因でエラーとなる可能性があります。
+WinAutomationでは各アクションに対して、エラー発生時にどういった処理を行うかの設定が可能です。
+ここでは例外処理に関する基礎的な内容を学びます。
+ アクションに対する例外の設定 Wait for Imageアクションを例題に例外の設定を行います。
+ ブラウザを起動し、GoogleやYahoo!Japanなどのページを開きます。
+ Wait for Imageアクションを配置し、対象の画像にロゴを設定します。
+ Fail if image does not not appear withinにチェックを入れ、秒数を1秒に設定します。
+ Display Messageアクションを配置し、任意のメッセージが出来るように設定します。
+ ブラウザを終了し、実行。
+エラーになることを確認します。  Wait for Imageアクションを配置し、Exeption Handlingタブを開きます。
+ Continue Process Executionにチェックを入れ、Go to next actionを選択します。
+ 再度ロボットを実行し、エラーが発生しないことを確認します。
+   例外設定の概要  If an exeption occurs
+Retry Actionにチェックを入れることで、リトライを行うことが出来ます。
+表示に時間がかかっているために処理できない場合があるなどに有効です。
+ Exeption handling rules for
+特定のエラーが発生した場合に限り、例外処理を行いたい場合に設定します。
+指定可能なExeptionの種類はアクションごとに決まっています。
+ Set Variable
+例外発生時に変数を設定したい場合に設定します。
+エラー有無によって、何らかの分岐を行いたい場合などに使用します。
+ Run another Process</description>
+    </item>
+    
+  </channel>
+</rss>
