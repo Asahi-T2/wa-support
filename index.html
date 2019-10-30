@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+  <head>
+  <meta charset="utf-8">
+  <title>WinAutomation Support</title>
+
+  <meta name="generator" content="Hugo 0.59.0" />
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="http://A181102:2015/plugins/bootstrap/bootstrap.min.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="http://A181102:2015/plugins/themify-icons/themify-icons.css">
+  <!-- highlight -->
+  <link rel="stylesheet" href="http://A181102:2015/plugins/highlight/hybrid.css">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+  <style>
+  :root{
+    --primary-color:#02007e;
+    --secondary-color:#f9f9f9;
+    --text-color:#636363;
+    --text-color-dark:#242738;
+    --white-color:#ffffff;
+  }  
+  </style>
+
+<!-- Main Stylesheet -->
+
+<link rel="stylesheet" href="http://A181102:2015/css/style.min.css" integrity="" media="screen">
+
+<!-- jquiry -->
+<script src="http://A181102:2015/plugins/jquery/jquery-1.12.4.js"></script>
+
+<!-- jquary ui -->
+<script src="http://A181102:2015/plugins/jquery/jquery-ui.js"></script>
+
+<!--Favicon-->
+<link rel="icon" href="http://A181102:2015/images/favicon.png" type="image/x-icon">
+
+</head>
+<body>
+  
+  <!-- header -->
+  <header class="hero-section overlay bg-cover banner" data-background="http://A181102:2015/images/banner.jpg">
+    <div class="container mb-100">
+      <!-- navigation -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="http://A181102:2015/">
+    
+    
+    
+    WinAutomation Support
+    
+  </a>
+  <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+    aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse text-center" id="navigation">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="http://A181102:2015/">Home</a>
+      </li>
+      
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          チュートリアル
+        </a>
+        <div class="dropdown-menu" >
+          
+          <a class="dropdown-item" href="http://A181102:2015/tutorial">基礎内容</a>
+          
+        </div>
+      </li>
+      
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="http://A181102:2015/action">アクション一覧</a>
+      </li>
+      
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="http://A181102:2015/sample">サンプル</a>
+      </li>
+      
+      
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          ナレッジ
+        </a>
+        <div class="dropdown-menu" >
+          
+          <a class="dropdown-item" href="http://A181102:2015/faq">FAQ</a>
+          
+          <a class="dropdown-item" href="http://A181102:2015/truble">トラブルシューティング</a>
+          
+        </div>
+      </li>
+      
+      
+    </ul>
+    
+  </div>
+</nav>
+      <!-- /navigation -->
+    </div>
+    <!-- banner -->
+<div class="container">
+    <div class="row">
+    <div class="col-lg-8 text-center mx-auto">
+    <h1 class="text-white mb-3">WinAutomationサポート</h1>
+    <p class="text-white mb-4">WinAutomationに関する様々な情報のナレッジベースです。</p>
+        <div class="position-relative">
+        <div id="searchbox">
+        <input id="q" class="form-control" placeholder="検索キーワードを入力" onkeyup="do_find(this.value)" onkeydown="key(event.keyCode)" autocomplete="off" >
+
+        <div id="srhbox">
+        <span id="stat"></span>
+        <div id="navi"></div>
+        <div id="result" class="bg-white"></div>
+        </div>
+        <script src="http://A181102:2015/index.js"></script>
+        <style>
+        dd{
+            margin:0;
+            padding:0 0 1em 0.5em;
+            width:90%;
+        }
+        dd span{
+            font-size:80%;
+            color:#888;
+        }
+        dd b{
+            color:#666600;
+            background-color:#ffffdd;
+            font-weight:bold;
+            border:1px solid #bbbb00;
+            margin:0 2px 0 2px;
+            padding:0 2px 0 2px;
+        }
+
+        #srhbox{
+            position: absolute;
+            display: none;
+            z-index: 1;
+            background-color: white;
+            width: 100%;
+            top: 52px;
+            border-radius: 10pt;
+            box-shadow: 1px 1px 10px;
+        }
+
+        #navi{
+            margin:0.5rem 0;
+            line-height:2rem;
+        }
+        #navi span{
+            border-top:1px solid #d8d8d8;
+            border-bottom:1px solid #d8d8d8;
+            padding: 0.33rem 0.66rem;
+            cursor:pointer;
+            word-wrap:break-word;
+        }
+        #navi span.selected{
+            background: #D3EDF7;
+        }
+        #navi span:first-child{
+            border-left:1px solid #d8d8d8;
+            border-top-left-radius: 0.4rem;
+            border-bottom-left-radius: 0.4rem;
+        }
+        #navi span:last-child{
+            border-right:1px solid #d8d8d8;
+            border-top-right-radius: 0.4rem;
+            border-bottom-right-radius: 0.4rem;
+        }
+
+
+        @media (max-width: 15em) {
+            #navi{
+                width:300px;
+            }
+        }
+        </style>
+
+        </div>
+        <script>
+        window.onload=function(){
+            gid("q").focus();
+        }
+
+        {
+            $_ = String.prototype;
+            
+            $_.mReplace = function(pat,flag){
+                var temp = this;
+                if(!flag){flag=""}
+                for(var i in pat){
+                    var re = new RegExp(i,flag);
+                    temp = temp.replace(re,pat[i])
+                }
+                return temp;
+            };
+        }
+
+        {
+            $_ = Date.prototype;
+            
+            $_.format = "yyyy-mm-dd HH:MM:SS";
+            $_.formatTime = function(format){
+                var yy;
+                var o = {
+                    yyyy : ((yy = this.getYear()) < 2000)? yy+1900 : yy,
+                    mm   : this.getMonth() + 1,
+                    dd   : this.getDate(),
+                    HH   : this.getHours(),
+                    MM   : this.getMinutes(),
+                    SS   : this.getSeconds()
+                }
+                for(var i in o){
+                    if (o[i] < 10) o[i] = "0" + o[i];
+                }
+                return (format) ? format.mReplace(o) : this.format.mReplace(o);
+            }
+        }
+        </script>
+        <script>
+        var start = new Date().getTime();
+        var bodylist = [];
+        var st = gid("stat");
+        var re = gid("result");
+        var nv = gid("navi");
+        var max = 5;
+        var KC = {
+            enter: 13,
+            left : 37,
+            right: 39,
+            up   : 38,
+            down : 40
+        };
+        function gid(id){
+            return document.getElementById(id);
+        }
+        function ignore_case(){
+            var a = arguments;
+            return "[" + a[0] + a[0].toUpperCase() + "]"
+        }
+        function do_find(v){
+            if(this.lastquery == v){return}
+            this.lastquery = v;
+            var re = find(v);
+            if(re.length){
+                pagenavi(re);
+                view(re)
+            }
+        }
+        function key(c){
+            switch(c){
+                case KC.enter: mv(1);break;
+                case KC.left : mv(-1);break;
+                case KC.right: mv(1);break;
+                case KC.up   : mv(-1);break;
+                case KC.down : mv(1);break;
+            }
+        }
+        function find(v){
+            var query = v;
+            if(!v){
+                $("#srhbox").hide();
+                st.innerHTML = "";
+                re.innerHTML=""
+                nv.innerHTML=""
+
+                return [];
+            }
+            var aimai;
+            if(query){
+
+
+                aimai = query.replace(/[a-z]/g,ignore_case);
+                try{
+                    reg = new RegExp(aimai,"g");
+                }catch(e){
+                    reg = /(.)/g;
+                }
+            }else{
+                reg = /(.)/g;
+            }
+            var start = new Date().getTime();
+            var result = [];
+            for(var i=0;i<data.length;i++){
+                
+                var s = bodylist[i];
+                var res = reg.exec(s);
+                if(!res){continue}
+                var len = res[0].length;
+                var idx = res.index;
+                if(idx != -1){
+                    result.push([i,idx,len]);
+                }
+            }
+            if(result.length){
+                st.innerHTML = result.length +"件見つかりました。";
+                $("#srhbox").show();
+            }
+            else{
+                if (query){
+                    st.innerHTML = "該当データは見つかりませんでした。";
+                    re.innerHTML=""
+                    nv.innerHTML=""
+                    $("#srhbox").show();
+                }else{
+                    st.innerHTML = "";
+                    re.innerHTML=""
+                    nv.innerHTML=""
+                    $("#srhbox").hide();
+                }
+                
+
+            }
+            var end = new Date().getTime();
+
+            console.log("Find:"+ (end-start) + " ms");
+            return result;
+        }
+        function time2date(time){
+            if(!this.cache){this.cache = {}};
+            if(this.cache[time]) return this.cache[time];
+            var d = new Date(time*1000);
+            this.cache[time] = d.formatTime("yyyy年mm月dd日");
+            return this.cache[time];
+        }
+        function snippet(body,idx,len){
+            var start = idx - 20;
+            return [
+                body.substring(start,idx),
+                ,"<b>"
+                ,body.substr(idx,len)
+                ,"</b>"
+                ,body.substr(idx+len,50),
+            ].join("");
+        }
+        function pagenavi(result){
+            var len = result.length;
+            var ct = Math.ceil(len/max);
+            var buf = [];
+            for(var i=0;i<ct;i++){
+                buf.push(
+                    "<span onclick='view(\"\","
+                    ,i+1
+                    ,");sw(",i,")'>"
+                    ,i+1
+                    ,"</span>"
+                );
+            }
+            nv.innerHTML = buf.join("");
+            sw(0);
+        }
+        function sw(t){
+            var span = nv.getElementsByTagName("span");
+            for(var i=0;i<span.length;i++){
+                span[i].className = (i==t)?"selected":"";
+            }
+        }
+        function mv(to){
+            var span = nv.getElementsByTagName("span");
+            var current;
+            if(!span.length){return}
+            for(var i=0;i<span.length;i++){
+                if(span[i].className == "selected"){
+                    current = i;break;
+                }
+            }
+            var moveto = current+to;
+            if(moveto < 0){return}
+            if(moveto > span.length-1){moveto=0}
+            sw(moveto);
+            view("",moveto+1)
+        }
+        function view(result,offset){
+            if(!offset){offset = 1}
+            if(!result){
+                result = this.last.reverse();
+            }else{
+                this.last = result;
+            }
+            var r = result.reverse();
+            var buf = ["<dl>"];
+            var count = 0;
+            for(var i=(offset-1)*max;i<r.length;i++){
+                count++;
+                if(count > max){break}
+                var num = r[i][0];
+                var idx = r[i][1];
+                var len = r[i][2];
+                with(data[num]){
+                    buf.push(
+                        "<dt><a href='",url,"'>"
+                        ,title||"無題","</a>"
+                        ,"<dd>"
+
+
+
+                        ,snippet(bodylist[num],idx,len)
+                    );
+                }
+            }
+            re.innerHTML = buf.join("");
+        }
+        for(var i=0;i<data.length;i++){
+            bodylist.push(data[i].title+ " " +data[i].content);
+        }
+        var bodyidx = bodylist.join("<>");
+        var end = new Date().getTime();
+
+        console.log("Index:"+ (end-start) + " ms");
+        </script>
+        </div>
+    </div>
+    
+    </div>
+    
+</div>
+
+
+<!-- /banner -->
+  </header>
+  <!-- /header -->
+  
+  <div id="content">
+
+  <!-- topics -->
+  <section class="section bg-gray">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          
+        </div>
+        <!-- topic-item -->
+        
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <a href="http://A181102:2015/tutorial/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+            <i class="ti-pencil-alt2 icon text-primary d-block mb-4"></i>
+            <h3 class="mb-3 mt-0">チュートリアル（基礎）</h3>
+            <p class="mb-0">RPA/WinAutomationに関する基礎内容の学習を行います。</p>
+          </a>
+        </div>
+        
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <a href="http://A181102:2015/action/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+            <i class="ti-list icon text-primary d-block mb-4"></i>
+            <h3 class="mb-3 mt-0">アクション一覧</h3>
+            <p class="mb-0">アクション一覧の参照を行います。</p>
+          </a>
+        </div>
+        
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <a href="http://A181102:2015/sample/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+            <i class="ti-android icon text-primary d-block mb-4"></i>
+            <h3 class="mb-3 mt-0">サンプル</h3>
+            <p class="mb-0">様々なプロセスをダウンロードできます。</p>
+          </a>
+        </div>
+        
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <a href="http://A181102:2015/faq/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+            <i class="ti-help icon text-primary d-block mb-4"></i>
+            <h3 class="mb-3 mt-0">FAQ</h3>
+            <p class="mb-0">よくある質問。</p>
+          </a>
+        </div>
+        
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <a href="http://A181102:2015/truble/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+            <i class="ti-face-sad icon text-primary d-block mb-4"></i>
+            <h3 class="mb-3 mt-0">トラブルシューティング</h3>
+            <p class="mb-0">よくあるトラブルに関する内容です。</p>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- /topics -->
+
+  
+  <!-- call to action -->
+  <section class="bg-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section bg-white shadow text-center">
+             <h2 class="mb-4">Contact</h2> 
+             <p class="mb-4">不明な点はロボ研までお問い合わせください。</p> 
+            <a href="http://A181102:2015/contact"
+              class="btn btn-primary">contact us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /call to action -->
+  
+
+
+  </div><!-- footer -->
+<footer class="section bg-gray pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 text-md-left text-center">
+       <p>&copy; 2019 <a href="https://asahi-robo.jp/">株式会社 ASAHI Accouting Robot 研究所</a></p>
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline mb-3">
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Bootstrap JS -->
+<script src="http://A181102:2015/plugins/bootstrap/bootstrap.min.js"></script>
+<!-- match-height JS -->
+<script src="http://A181102:2015/plugins/match-height/jquery.matchHeight-min.js"></script>
+<!-- highlight -->
+<script src="http://A181102:2015/plugins/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<!-- Main Script -->
+
+<script src="http://A181102:2015/js/script.min.js"></script></body>
+
+</html>

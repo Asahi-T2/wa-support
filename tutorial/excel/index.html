@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+  <head>
+  <meta charset="utf-8">
+  <title>EXCEL操作</title>
+
+  <meta name="generator" content="Hugo 0.59.0" />
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="http://A181102:2015/plugins/bootstrap/bootstrap.min.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="http://A181102:2015/plugins/themify-icons/themify-icons.css">
+  <!-- highlight -->
+  <link rel="stylesheet" href="http://A181102:2015/plugins/highlight/hybrid.css">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+  <style>
+  :root{
+    --primary-color:#02007e;
+    --secondary-color:#f9f9f9;
+    --text-color:#636363;
+    --text-color-dark:#242738;
+    --white-color:#ffffff;
+  }  
+  </style>
+
+<!-- Main Stylesheet -->
+
+<link rel="stylesheet" href="http://A181102:2015/css/style.min.css" integrity="" media="screen">
+
+<!-- jquiry -->
+<script src="http://A181102:2015/plugins/jquery/jquery-1.12.4.js"></script>
+
+<!-- jquary ui -->
+<script src="http://A181102:2015/plugins/jquery/jquery-ui.js"></script>
+
+<!--Favicon-->
+<link rel="icon" href="http://A181102:2015/images/favicon.png" type="image/x-icon">
+
+</head>
+<body>
+  
+  <!-- navigation -->
+  <header class="shadow-bottom sticky-top bg-primary banner">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="http://A181102:2015/">
+    
+    
+    
+    WinAutomation Support
+    
+  </a>
+  <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+    aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse text-center" id="navigation">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="http://A181102:2015/">Home</a>
+      </li>
+      
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          チュートリアル
+        </a>
+        <div class="dropdown-menu" >
+          
+          <a class="dropdown-item" href="http://A181102:2015/tutorial">基礎内容</a>
+          
+        </div>
+      </li>
+      
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="http://A181102:2015/action">アクション一覧</a>
+      </li>
+      
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="http://A181102:2015/sample">サンプル</a>
+      </li>
+      
+      
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          ナレッジ
+        </a>
+        <div class="dropdown-menu" >
+          
+          <a class="dropdown-item" href="http://A181102:2015/faq">FAQ</a>
+          
+          <a class="dropdown-item" href="http://A181102:2015/truble">トラブルシューティング</a>
+          
+        </div>
+      </li>
+      
+      
+    </ul>
+    
+  </div>
+</nav>
+    </div>
+  </header>
+  <!-- /navigation -->
+  
+  <div id="content">
+
+<!-- details page -->
+<section class="single section bg-gray pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="mb-5 bg-white p-4 sticky-top top-100">
+          <ul class="list-styled">
+            
+            
+            <a class="d-block h4 back-btn" href="http://A181102:2015/"></a>
+            
+            
+
+
+
+
+<li data-nav-id="http://A181102:2015/tutorial/" title="チュートリアル（基礎）" class="sidelist
+  parent
+  
+  ">
+  <a href="/tutorial/">
+    チュートリアル（基礎）
+  </a>
+  
+  
+  <ul>
+    
+    
+    
+
+    
+    
+    
+
+
+
+
+<li data-nav-id="http://A181102:2015/tutorial/rpa_rda/" title="RPA、RDAとは" class="sidelist
+  
+  
+  ">
+  <a href="/tutorial/rpa_rda/">
+    RPA、RDAとは
+  </a>
+  
+  
+
+
+    
+    
+    
+    
+
+
+
+
+<li data-nav-id="http://A181102:2015/tutorial/whats_winautomation/" title="WinAutomationとは" class="sidelist
+  
+  
+  ">
+  <a href="/tutorial/whats_winautomation/">
+    WinAutomationとは
+  </a>
+  
+  
+
+
+    
+    
+    
+    
+
+
+
+
+<li data-nav-id="http://A181102:2015/tutorial/setup/" title="セットアップ手順" class="sidelist
+  
+  
+  ">
+  <a href="/tutorial/setup/">
+    セットアップ手順
+  </a>
+  
+  
+
+
+    
+    
+    
+    
+
+
+
+
+<li data-nav-id="http://A181102:2015/tutorial/console/" title="コンソールの操作方法" class="sidelist
+  
+  
+  ">
+  <a href="/tutorial/console/">
+    コンソールの操作方法
+  </a>
+  
+  
+
+
+    
+    
+    
+    
+
+
+
+
+<li data-nav-id="http://A181102:2015/tutorial/task1_console/" title="Task1 コンソールを操作してみましょう" class="sidelist
+  
+  
+  ">
+  <a href="/tutorial/task1_console/">
+    Task1 コンソールを操作してみましょう
+  </a>
+  
+  
+
+
+    
+    
+    
+    
+
+
+
+
+<li data-nav-id="http://A181102:2015/tutorial/processdesigner/" title="ProcessDesignerの操作方法" class="sidelist
+  
+  
+  ">
+  <a href="/tutorial/processdesigner/">
+    ProcessDesignerの操作方法
+  </a>
+  
+  
+
+
+    
+    
+    
+    
+
+
+
+
+<li data-nav-id="http://A181102:2015/tutorial/action/" title="基本アクションについて" class="sidelist
+  
+  
+  ">
+  <a href="/tutorial/action/">
+    基本アクションについて
+  </a>
+  
+  
+
+
+    
+    
+    
+    
+
+
+
+
+<li data-nav-id="http://A181102:2015/tutorial/task2_std_action/" title="Task2 アクションを設定してみましょう" class="sidelist
+  
+  
+  ">
+  <a href="/tutorial/task2_std_action/">
+    Task2 アクションを設定してみましょう
+  </a>
+  
+  
+
+
+    
+    
+    
+    
+
+
+
+
+<li data-nav-id="http://A181102:2015/tutorial/trigger/" title="トリガー設定" class="sidelist
+  
+  
+  ">
+  <a href="/tutorial/trigger/">
+    トリガー設定
+  </a>
+  
+  
+
+
+    
+    
+    
+    
+
+
+
+
+<li data-nav-id="http://A181102:2015/tutorial/task3_trigger/" title="Task3 トリガーを作成してみましょう" class="sidelist
+  
+  
+  ">
+  <a href="/tutorial/task3_trigger/">
+    Task3 トリガーを作成してみましょう
+  </a>
+  
+  
+
+
+    
+    
+    
+    
+
+
+
+
+<li data-nav-id="http://A181102:2015/tutorial/scheduler/" title="スケジューラー設定" class="sidelist
+  
+  
+  ">
+  <a href="/tutorial/scheduler/">
+    スケジューラー設定
+  </a>
+  
+  
+
+
+    
+    
+    
+    
+
+
+
+
+<li data-nav-id="http://A181102:2015/tutorial/task4_scheduler/" title="Task4 スケジューラーを作成してみましょう" class="sidelist
+  
+  
+  ">
+  <a href="/tutorial/task4_scheduler/">
+    Task4 スケジューラーを作成してみましょう
+  </a>
+  
+  
+
+
+    
+    
+    
+    
+
+
+
+
+<li data-nav-id="http://A181102:2015/tutorial/excel/" title="EXCEL操作" class="sidelist
+  
+  active
+  ">
+  <a href="/tutorial/excel/">
+    EXCEL操作
+  </a>
+  
+  
+
+
+    
+    
+    
+    
+
+
+
+
+<li data-nav-id="http://A181102:2015/tutorial/task5_excel/" title="Task5 EXCELを操作してみましょう" class="sidelist
+  
+  
+  ">
+  <a href="/tutorial/task5_excel/">
+    Task5 EXCELを操作してみましょう
+  </a>
+  
+  
+
+
+    
+    
+    
+    
+
+
+
+
+<li data-nav-id="http://A181102:2015/tutorial/macro_recorder/" title="マクロレコーダー" class="sidelist
+  
+  
+  ">
+  <a href="/tutorial/macro_recorder/">
+    マクロレコーダー
+  </a>
+  
+  
+
+
+    
+    
+    
+    
+
+
+
+
+<li data-nav-id="http://A181102:2015/tutorial/task6_macro_recorder/" title="Task6 アプリケーションを操作してみましょう" class="sidelist
+  
+  
+  ">
+  <a href="/tutorial/task6_macro_recorder/">
+    Task6 アプリケーションを操作してみましょう
+  </a>
+  
+  
+
+
+    
+    
+    
+    
+
+
+
+
+<li data-nav-id="http://A181102:2015/tutorial/web_recorder/" title="Webレコーダー" class="sidelist
+  
+  
+  ">
+  <a href="/tutorial/web_recorder/">
+    Webレコーダー
+  </a>
+  
+  
+
+
+    
+    
+    
+    
+
+
+
+
+<li data-nav-id="http://A181102:2015/tutorial/task7_web_recorder/" title="Task7 Webサイトを操作してみましょう" class="sidelist
+  
+  
+  ">
+  <a href="/tutorial/task7_web_recorder/">
+    Task7 Webサイトを操作してみましょう
+  </a>
+  
+  
+
+
+    
+    
+    
+    
+
+
+
+
+<li data-nav-id="http://A181102:2015/tutorial/image_recognition/" title="画像認識" class="sidelist
+  
+  
+  ">
+  <a href="/tutorial/image_recognition/">
+    画像認識
+  </a>
+  
+  
+
+
+    
+    
+    
+    
+
+
+
+
+<li data-nav-id="http://A181102:2015/tutorial/task8_image_recognition/" title="Task8 画像認識で処理を作成してみましょう" class="sidelist
+  
+  
+  ">
+  <a href="/tutorial/task8_image_recognition/">
+    Task8 画像認識で処理を作成してみましょう
+  </a>
+  
+  
+
+
+    
+    
+    
+    
+
+
+
+
+<li data-nav-id="http://A181102:2015/tutorial/exeption/" title="例外処理" class="sidelist
+  
+  
+  ">
+  <a href="/tutorial/exeption/">
+    例外処理
+  </a>
+  
+  
+
+
+    
+    
+  </ul>
+</li>
+
+
+
+            
+            
+
+
+
+
+<li data-nav-id="http://A181102:2015/action/" title="アクション一覧" class="sidelist
+  
+  
+  ">
+  <a href="/action/">
+    アクション一覧
+  </a>
+  
+  
+
+
+            
+            
+
+
+
+
+<li data-nav-id="http://A181102:2015/sample/" title="サンプル" class="sidelist
+  
+  
+  ">
+  <a href="/sample/">
+    サンプル
+  </a>
+  
+  
+
+
+            
+            
+
+
+
+
+<li data-nav-id="http://A181102:2015/faq/" title="FAQ" class="sidelist
+  
+  
+  ">
+  <a href="/faq/">
+    FAQ
+  </a>
+  
+  
+
+
+            
+            
+
+
+
+
+<li data-nav-id="http://A181102:2015/truble/" title="トラブルシューティング" class="sidelist
+  
+  
+  ">
+  <a href="/truble/">
+    トラブルシューティング
+  </a>
+  
+  
+
+
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-5 bg-white">
+          <h2 class="mb-5">EXCEL操作</h2>
+          
+          <div class="content">
+
+<p>これまでは基礎的な部分が大きかったですが、RPAらしく他のアプリケーションを操作していきましょう。
+まずは、業務には欠かせないEXCELの操作を行いたいと思います。</p>
+
+<hr />
+
+<h2 id="span-class-ti-arrow-circle-right-span-excelのデータ構造"><span class="ti-arrow-circle-right"></span> EXCELのデータ構造</h2>
+
+<p>普段意識することはありませんが、EXCELは縦と横の2次元データから構成されています。<br />
+2次元データというと少し複雑に感じますが、「A1」であれば「A列の1行目」というように、理解することができると思います。<br />
+WinAutomationでは、EXCELデータを取り込むと、DataTableという形式に変換され、「%ExcelData[0][0]%」というような式でアクセスします。<br />
+1番目のインデックスが「行」、2番目のインデックスが「列」を表しており、読み込む前のEXCELは1から、WinAutomationに読み込んだ後は0からスタートするため、注意しましょう。</p>
+
+<p><img src="../images/excel/matrix.png" alt="Screenshot" /></p>
+
+<hr />
+
+<h2 id="span-class-ti-arrow-circle-right-span-excelの起動"><span class="ti-arrow-circle-right"></span> EXCELの起動</h2>
+
+<p>Launch Excelアクションを使用することで、EXCELを起動することができます。</p>
+
+<ol>
+<li><p>プロセスデザイナーを起動し、Launch Excelアクションを配置します。
+<img src="../images/excel/launch_excel.png" alt="Screenshot" /></p></li>
+
+<li><p>そのままOKボタンを押し、実行を行います。</p></li>
+
+<li><p>空のEXCELが起動することを確認します。</p></li>
+
+<li><p>次に先ほど設定したLaunch Excelアクションを編集し、すでに作成されているファイルを開いてみましょう。</p></li>
+
+<li><p>既存ファイルを開く場合はLauch Excel項目で「and open the dollowing document」を選択し、Document Path項目に開きたいEXCELファイルのパスを指定します。<br />
+<img src="../images/excel/launch_excel_file.png" alt="Screenshot" /></p></li>
+
+<li><p>再度実行を行い、EXCELファイルが起動することを確認してください。</p>
+
+<div class="notices tip" ><p>
+Make Instance Visibleのチェックを外すと、EXCELの画面が表示されなくなる代わりに、処理が若干早くなります。  
+ただし、エラーが発生した場合に、通常の操作ではEXCELを閉じれなくなるため、基本的には表示させておくのが無難です。
+</p></div></li>
+</ol>
+
+<hr />
+
+<h2 id="span-class-ti-arrow-circle-right-span-excelへの書き込み"><span class="ti-arrow-circle-right"></span> EXCELへの書き込み</h2>
+
+<p>EXCELへの書き込みには、Write to Excel Worksheetアクションを使用します。</p>
+
+<ol>
+<li><p>プロセスデザイナーを起動し、Launch Excelアクションを配置、空のEXCELを起動するように設定します。</p></li>
+
+<li><p>Write to Excel Worksheetアクションを配置し、Excel Instanceに上記で設定したEXCELのインスタンスを設定します。<br />
+インスタンスとは、複数のEXCELを起動している場合に、どのEXCELを操作するのかを判断するために、WinAutomationが生成する名札のようなものです。</p></li>
+
+<li><p>以下のように各項目を設定します。<br />
+<img src="../images/excel/write2excel.png" alt="Screenshot" /></p></li>
+
+<li><p>実行を行い、EXCELのA1セルに「Hello Excel」が表示されることを確認します。</p>
+
+<div class="notices tip" ><p>
+Column項目にはA、ABのようにEXCELの列名を設定することも可能です。 
+</p></div></li>
+</ol>
+
+<hr />
+
+<h2 id="span-class-ti-arrow-circle-right-span-excelの読み込み"><span class="ti-arrow-circle-right"></span> EXCELの読み込み</h2>
+
+<p>EXCELへの読み込みには、Read from Excel Worksheetアクションを使用します。</p>
+
+<ol>
+<li><p>プロセスデザイナーを起動し、Launch Excelアクションを配置、下記EXCELファイルを起動するように設定します。<br />
+<a href="../files/サンプル領収書.xlsx">サンプル領収書.xlsx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ti-cloud-down"></span><small>Download</small></a></p></li>
+
+<li><p>Read from Excel Worksheetアクションを配置し、Excel Instanceに上記で設定したEXCELのインスタンスを設定します。</p></li>
+
+<li><p>以下のように各項目を設定します。<br />
+<img src="../images/excel/read2excel.png" alt="Screenshot" /></p></li>
+
+<li><p>実行を行い、変数の値を確認します。<br />
+<img src="../images/excel/read2excel_result.png" alt="Screenshot" /></p></li>
+</ol>
+
+<hr />
+
+<h2 id="span-class-ti-arrow-circle-right-span-複数行の読み込み"><span class="ti-arrow-circle-right"></span> 複数行の読み込み</h2>
+
+<p>EXCELへの読み込みには、Read from Excel Worksheetアクションを使用します。</p>
+
+<ol>
+<li><p>プロセスデザイナーを起動し、Launch Excelアクションを配置、下記EXCELファイルを起動するように設定します。</p>
+
+<p><a href="../files/職員マスタ.xlsx">職員マスタ.xlsx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ti-cloud-down"></span><small>Download</small></a></p></li>
+
+<li><p>Get First Free Columnアクションを配置します。<br />
+このアクションを使用することで、列や行数が変わっても、プロセスを修正することなく、処理することが可能となります。
+<img src="../images/excel/get_first_free_column.png" alt="Screenshot" /></p></li>
+
+<li><p>Read from Excel Worksheetアクションを配置し、Excel Instanceに上記で設定したEXCELのインスタンスを設定します。</p></li>
+
+<li><p>以下のように各項目を設定します。<br />
+<img src="../images/excel/read2excel_range.png" alt="Screenshot" /></p></li>
+
+<li><p>実行を行い、変数の値を確認します。<br />
+<img src="../images/excel/read2excel_range_result.png" alt="Screenshot" /></p>
+
+<div class="notices tip" ><p>
+Get First Free Columnでは、末端の空白の行番号、列番号を返します。  
+そのため、結果のように、行と列の最後に空白の箇所が出てしまいます。  
+これを回避するには「%FirstFreeColumn - 1%」のように、番号を1つ前に設定する必要があります。
+</p></div>
+
+<div class="notices tip" ><p>
+Read from Excel WorksheetアクションのAdvancedタブで「First line of range contains column names]にチェックを入れると、先頭行を列名として設定することが可能になります。  
+</p></div></li>
+</ol>
+
+<hr />
+
+<h2 id="span-class-ti-arrow-circle-right-span-シートの選択"><span class="ti-arrow-circle-right"></span> シートの選択</h2>
+
+<p>上記アクションで実行されるシートは、最後に保存する前に表示されていたシートとなります。<br />
+そのため複数シートが存在するようなEXCELでは、本来処理したいシートではなく、誤ったシートで処理が行われる可能性があります。
+EXCEL操作を行う場合には、Set Active Excel Worksheetアクションを使用して、シートを選択するようにするのがよいでしょう。</p>
+
+<p><img src="../images/excel/set_active_sheet.png" alt="Screenshot" /></p>
+
+<hr />
+
+<h2 id="span-class-ti-arrow-circle-right-span-excelの保存と終了"><span class="ti-arrow-circle-right"></span> EXCELの保存と終了</h2>
+
+<p>作成したEXCELを保存するには、Save Excelアクションを使用します。<br />
+またEXCELを終了する場合には、Close Excelアクションを使用します。<br />
+Close Excelアクションでも保存を行うことができるため、保存と終了を同時に行う場合には、Close Excelアクションのみで処理することが可能です。</p>
+
+<p><img src="../images/excel/close_excel.png" alt="Screenshot" /></p>
+</div>
+          
+          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 30 Oct 2019</p>
+          <nav class="pagination mt-3">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+            <a class="nav nav-prev" href="http://A181102:2015/tutorial/task4_scheduler/"><i class="ti-arrow-left mr-2"></i>Task4 スケジューラーを作成してみましょう</a>
+            
+            
+            <a class="nav nav-next" href="http://A181102:2015/tutorial/task5_excel/">Task5 EXCELを操作してみましょう<i class="ti-arrow-right ml-2"></i></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /details page -->
+
+
+
+
+
+  </div><!-- footer -->
+<footer class="section bg-gray pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 text-md-left text-center">
+       <p>&copy; 2019 <a href="https://asahi-robo.jp/">株式会社 ASAHI Accouting Robot 研究所</a></p>
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline mb-3">
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Bootstrap JS -->
+<script src="http://A181102:2015/plugins/bootstrap/bootstrap.min.js"></script>
+<!-- match-height JS -->
+<script src="http://A181102:2015/plugins/match-height/jquery.matchHeight-min.js"></script>
+<!-- highlight -->
+<script src="http://A181102:2015/plugins/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<!-- Main Script -->
+
+<script src="http://A181102:2015/js/script.min.js"></script></body>
+
+</html>
